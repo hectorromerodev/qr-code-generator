@@ -15,7 +15,7 @@ echo > .nojekyll
 
 
 git init
-git checkout -d dist
+git checkout -d main
 git add -A
 git commit -m 'deploy'
 
