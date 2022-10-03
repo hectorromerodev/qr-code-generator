@@ -15,14 +15,14 @@ echo > .nojekyll
 
 
 git init
-git checkout --
+git checkout -d dist
 git add -A
 git commit -m 'deploy'
 
 # if you are deploying to https://<USERNAME>.github.io
-# git push -f https://github.com/hectorromerodev/qr-code-generator main
+# git push -f https://github.com/hrwebdevelopers/qr-code-generator main
 
 # if you are deploying to https://<USERNAME>.github.io/<REPO>
-git push -f https://github.com/hectorromerodev/qr-code-generator
+git push -f https://github.com/hrwebdevelopers/qr-code-generator
 
 cd -
