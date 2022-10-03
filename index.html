@@ -6,13 +6,11 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Generador de c&oacute;digo QR en linea | Gratis</title>
-  <link rel="icon" type="image/svg+xml" href="/assets/vite.4a748afd.svg" />
-
+  <link rel="icon" type="image/png" href="qr-code-ico.png" />
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet" />
   
-
-  <script type="module" crossorigin src="/assets/index.2df75f17.js"></script>
-  <link rel="stylesheet" href="/assets/index.c766d75c.css">
+  <script type="module" crossorigin src="/assets/index.1785864e.js"></script>
+  <link rel="stylesheet" href="/assets/index.fb8dc826.css">
   <script type="module">try{import.meta.url;import("_").catch(()=>1);}catch(e){}window.__vite_is_modern_browser=true;</script>
   <script type="module">!function(){if(window.__vite_is_modern_browser)return;console.warn("vite: loading legacy build because dynamic import or import.meta.url is unsupported, syntax error above should be ignored");var e=document.getElementById("vite-legacy-polyfill"),n=document.createElement("script");n.src=e.src,n.onload=function(){System.import(document.getElementById('vite-legacy-entry').getAttribute('data-src'))},document.body.appendChild(n)}();</script>
 </head>
@@ -23,8 +21,6 @@
       <div class="text-xl font-bold text-white">Generador de c&oacute;digo QR</div>
     </div>
   </header>
-  <!-- LOADER -->
-  <!-- <img class="hidden" src="src/assets/media/rolling-0.8s-200px.svg" alt="Loading Icon Active" /> -->
   <main id="app">
     <div class="flex flex-col-reverse align-center justify-center m-auto md:max-w-4xl p-5 md:flex-row">
       <section class="w-full md:w-2/3 mr-24">
@@ -37,11 +33,15 @@
           Ingrese su URL para generar au código QR y descargar la imagen.
         </p>
         <form id="qr-generate-form" class="mt-4">
-          <label for="url">Tu Sitio web <span class="m-0 p-0 text-xs text-slate-600 dark:text-slate-400">(No olvides "http://" o
+          <label for="url">Tu Sitio web <span class="m-0 p-0 text-xs text-slate-600 dark:text-slate-400">(No olvides
+              "http://" o
               "https://")</span></label>
           <input id="url" type="url" placeholder="Ingresa el URL de tu negocio, restaurante &oacute; red social."
-            class="w-full border-2 border-gray-200 rounded px-3 pt-3 text-grey-dark mr-2 focus:outline-none mb-5" required />
-          <label for="size">Dimensiones <span class="m-0 p-0 text-xs text-slate-600 dark:text-slate-400">(px)</span></label>
+            class="w-full border-2 border-gray-200 rounded px-3 pt-3 text-grey-dark mr-2 focus:outline-none mb-5"
+            required />
+          <label for="size">Dimensiones <span
+              class="m-0 p-0 text-xs text-slate-600 dark:text-slate-400">(px)</span></label>
+
           <select name="size" id="size"
             class="w-full border-2 border-gray-200 rounded p-3 text-grey-dark mr-2 focus:outline-none">
             <option value="100">100x100</option>
@@ -73,13 +73,13 @@
     </div>
   </main>
   
-  
+  <!-- <script type="module" src="/src/assets/js/code-generator.js"></script> -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"
     integrity="sha512-CNgIRecGo7nphbeZ04Sc13ka07paqdeTu0WR1IM4kNcpmBAUSHSQX0FslNhTDadL4O5SAGapGt4FodqL8My0mA=="
     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <script nomodule>!function(){var e=document,t=e.createElement("script");if(!("noModule"in t)&&"onbeforeload"in t){var n=!1;e.addEventListener("beforeload",(function(e){if(e.target===t)n=!0;else if(!e.target.hasAttribute("nomodule")||!n)return;e.preventDefault()}),!0),t.type="module",t.src=".",e.head.appendChild(t),t.remove()}}();</script>
   <script nomodule crossorigin id="vite-legacy-polyfill" src="/assets/polyfills-legacy.907dbd91.js"></script>
-  <script nomodule crossorigin id="vite-legacy-entry" data-src="/assets/index-legacy.f895fc09.js">System.import(document.getElementById('vite-legacy-entry').getAttribute('data-src'))</script>
+  <script nomodule crossorigin id="vite-legacy-entry" data-src="/assets/index-legacy.b5db85f1.js">System.import(document.getElementById('vite-legacy-entry').getAttribute('data-src'))</script>
 </body>
 
 </html>
