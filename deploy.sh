@@ -7,15 +7,16 @@ set -e
 npx tailwindcss -o src/assets/css/app.css --minify
 yarn run build
 
+# Create dist branch
+git checkout -B dist
+
 # navigate into the build output directory
 cd dist
 
 # place .nojekyll to bypass Jekyll processing
 echo > .nojekyll
 
-
 git init
-git checkout -B dist
 git add -A
 git commit -m 'deploy'
 
@@ -23,6 +24,4 @@ git commit -m 'deploy'
 # git push -f https://github.com/hrwebdevelopers/qr-code-generator main
 
 # if you are deploying to https://<USERNAME>.github.io/<REPO>
-git push -f https://github.com/hectorromerodev/qr-code-generator
-
-cd -
+git push https://github.com/hectorromerodev/qr-code-generator
