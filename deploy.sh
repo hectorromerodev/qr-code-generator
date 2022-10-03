@@ -23,6 +23,6 @@ git commit -m 'deploy'
 # git push -f https://github.com/hrwebdevelopers/qr-code-generator main
 
 # if you are deploying to https://<USERNAME>.github.io/<REPO>
-git push -f https://github.com/hrwebdevelopers/qr-code-generator
+git push -f https://github.com/hectorromerodev/qr-code-generator
 
 cd -
